@@ -13,7 +13,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensure header stays on top */
+    z-index: 1000;
 }
 
 nav {
@@ -53,7 +53,7 @@ nav ul li a {
     text-align: center;
     color: #acacac;
     position: relative;
-    padding-top: 70px; /* Add padding to account for fixed header height */
+    padding-top: 70px;
 }
 
 .hero::before {
@@ -91,12 +91,12 @@ nav ul li a {
     border-radius: 5px;
 }
 
-.services {
-    padding: 60px 20px;
+.about, .services, .contact {
+    padding: 20px 20px;
     text-align: center;
 }
 
-.services h2 {
+.about h2, .services h2, .contact h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
@@ -106,6 +106,18 @@ nav ul li a {
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
+}
+
+.contact p a {
+    color: #e31837;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
 }
 
 footer {

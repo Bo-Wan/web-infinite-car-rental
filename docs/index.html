@@ -12,8 +12,9 @@
             <div class="logo">Infiniti Car Rentals</div>
             <ul>
                 <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -24,6 +25,7 @@
             <a href="#services" class="btn">Our Services</a>
         </div>
     </section>
+    
     <section id="services" class="services">
         <h2>Our Services</h2>
         <div class="service-card">
@@ -39,8 +41,48 @@
             <p>Enjoy round-the-clock support for a hassle-free rental experience.</p>
         </div>
     </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p><strong>Company:</strong> Infinite Motors Pty Ltd</p>
+        <p><strong>ABN:</strong> 60 616 459 968</p>
+        <p><strong>ACN:</strong> 616 459 958</p>
+        <p><strong>Trading Name:</strong> Infinite Car Rental</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> 4 Watts Street, Box Hill VIC 3128</p>
+        <p><strong>Phone:</strong> 0474 688 888</p>
+        <p><strong>Email:</strong> <a href="mailto:infinitecarrental@gmail.com">infinitecarrental@gmail.com</a></p>
+        <div id="map"></div>
+    </section>
     <footer>
         <p>&copy; 2024 Infiniti Car Rentals. All rights reserved.</p>
     </footer>
+
+
+    <!-- <body>
+        <gmp-map center="-37.8175163269043,145.12548828125" zoom="14" map-id="DEMO_MAP_ID">
+          <gmp-advanced-marker position="-37.8175163269043,145.12548828125" title="My location"></gmp-advanced-marker>
+        </gmp-map>
+      </body> -->
+
+    <script>
+        function initMap() {
+            var location = {lat: -37.81753158569336, lng: 145.12550354003906}; // Coordinates for Melbourne, adjust as needed
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa_L_9OxtnErIaF-DQdDleGKm-0JVh7eU&callback=initMap">
+    </script>
 </body>
 </html>
