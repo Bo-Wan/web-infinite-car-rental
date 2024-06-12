@@ -1345,7 +1345,7 @@ header.header-mobile.header-light #menu-btn {
 /* ================================================== */
 
 section {
-    padding: 90px 0 90px 0;
+    padding: 80px 0 80px 0;
     position: relative;
 }
 
@@ -1425,7 +1425,7 @@ section.no-bg,
 
 footer {
     /*background:url('../images/logo-big.png') -50% center no-repeat var(--primary-color) !important;*/
-    padding: 80px 0 0 0;
+    padding: 60px 0 0 0;
     font-size: 15px;
 }
 
